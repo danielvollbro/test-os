@@ -1,6 +1,6 @@
 # ☁️ Cloud Native Gaming & Development Rig
 
-[![build-image](https://github.com/danielvollbro/workstation-headless/actions/workflows/build.yml/badge.svg)](https://github.com/<your-username>/<your-repo>/actions/workflows/build.yml)
+[![build-image](https://github.com/danielvollbro/workstation-headless/actions/workflows/build.yml/badge.svg)](https://github.com/danielvollbro/<your-repo>/actions/workflows/build.yml)
 [![BlueBuild](https://img.shields.io/badge/Built%20with-BlueBuild-blue?logo=github)](https://blue-build.org/)
 [![Fedora](https://img.shields.io/badge/Based%20on-Aurora%20(Fedora)-blue)](https://getaurora.dev/)
 
@@ -15,6 +15,16 @@ The system is built automatically via GitHub Actions as an OCI container (Docker
 No configuration drift. No manual patching. If something breaks? `rpm-ostree rollback`.
 
 **Scope:** This repository specifically targets my **Virtual Machine (Cloud Rig)**. Physical thin clients will be managed in a separate repository.
+
+
+## 🏗 The Workstation Ecosystem
+
+| Repository | Role | Description |
+| :--- | :--- | :--- |
+| **`workstation-headless`** | **Compute Host** | **This repo.** The powerful backend VM doing the heavy lifting. |
+| `workstation-desktop` | Thin Client | Lightweight OS for physical endpoints connecting to the host. |
+| `workstation-dotfiles` | Config | Unified configuration (Chezmoi) for both environments. |
+
 
 ## 🏗 Architecture & Tech Stack
 
@@ -96,7 +106,7 @@ To build your own version:
 4. Wait for the build to finish.
 5. Install Aurora/Fedora Atomic and run:
 ```bash
-rpm-ostree rebase ostree-unverified-registry:ghcr.io/<your-username>/<your-image-name>:latest
+rpm-ostree rebase ostree-unverified-registry:ghcr.io/danielvollbro/workstation-headless:latest
 ```
 
 ---
