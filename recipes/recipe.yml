@@ -1,6 +1,6 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
-name: streaming-linux-os
+name: workstation-headless
 description: My declarative Cloud Native Gaming & Dev Rig
 
 base-image: ghcr.io/ublue-os/aurora-dx-nvidia

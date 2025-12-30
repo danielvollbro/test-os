@@ -1,6 +1,6 @@
 # ☁️ Cloud Native Gaming & Development Rig
 
-[![build-image](https://github.com/danielvollbro/streaming-linux-os/actions/workflows/build.yml/badge.svg)](https://github.com/<your-username>/<your-repo>/actions/workflows/build.yml)
+[![build-image](https://github.com/danielvollbro/workstation-headless/actions/workflows/build.yml/badge.svg)](https://github.com/<your-username>/<your-repo>/actions/workflows/build.yml)
 [![BlueBuild](https://img.shields.io/badge/Built%20with-BlueBuild-blue?logo=github)](https://blue-build.org/)
 [![Fedora](https://img.shields.io/badge/Based%20on-Aurora%20(Fedora)-blue)](https://getaurora.dev/)
 
